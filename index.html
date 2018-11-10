@@ -1,0 +1,1286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Title -->
+    <title>jQuery.filer - Simple HTML5 file uploader plugin tool for jQuery.</title>
+    <!-- Metas -->
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="jQuery.filer - Simple HTML5 file uploader, a plugin tool for jQuery which change completely file input and make it with multiple file selection, drag&amp;drop support, different validations, thumbnails, icons, instant upload, print-screen upload and many other features and options">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/plugins/jquery.filer.css">
+    <link rel="stylesheet" type="text/css" href="css/plugins/themes/jquery.filer-dragdropbox-theme.css">
+    <link rel="stylesheet" type="text/css" href="css/plugins/prettify/tomorrow.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <!-- Scripts -->
+    <script src="js/jquery/jquery.min.js" type="text/javascript"></script>
+    <script src="js/scripts/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/scripts/jquery.filer.js" type="text/javascript"></script>
+    <script src="js/scripts/prettify.js" type="text/javascript"></script>
+    <script src="js/scripts/scripts.js" type="text/javascript"></script>
+    <script src="js/custom.js" type="text/javascript"></script>
+    <!--[if IE]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <section id="home-section">
+        <div class="home-inner row">
+            <div class="col-md-6">
+                <h1 id="plugin-name" class="font-title">jQuery.filer</h1>
+                <p id="plugin-description">
+                    jQuery.filer - Simple HTML5 file uploader, a plugin tool for jQuery which
+                    change completely file input and make it with multiple file selection, drag&amp;drop support,
+                    different validations, thumbnails, icons, instant upload, print-screen upload and many other
+                    features and options.
+                </p>
+                <div class="buttons row">
+                    <a href="#download" class="col-sm-6">
+                        <span class="font-title">Download</span>
+                        <span class="sub">the jQuery plugin</span>
+                    </a>
+                    <a href="#documentation" class="col-sm-6">
+                        <span class="font-title">Documentation</span>
+                        <span class="sub">for jQuery plugin</span>
+                    </a>
+                </div>
+                <div id="plugin-version" class="version">v1.3.0</div>
+            </div>
+        </div>
+        <div class="home-faceimg"></div>
+    </section>
+    <section id="section1" class="section-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3 class="mt0">Beautiful and performant file input</h3>
+                    <p>
+                        We've created an input and activated partial all jquery.filer features on this demo to show for
+                        what this script is actually used for and it's power. In this example we've deactivate all file
+                        validators and used drag&amp;drop, instantly file upload, file preview, clipboard image paste,
+                        customized input and thumbs templates, custom theme features to create a good playground for
+                        you. You can also take a look in your browser console to see the server response after
+                        uploading a files.
+                    </p>
+                    <br>
+                    <a href="#instructions" class="btn-custom blue-light">Instructions</a>
+                    <a href="#demos" class="btn-custom blue-light">Demos</a>
+                </div>
+                <div class="col-md-6">
+                    <input type="file" multiple="multiple" name="files[]" id="demo-fileInput-1">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 demo-fileInput-thumbs"></div>
+            </div>
+        </div>
+    </section>
+    <section id="section2">
+        <a name="features"></a>
+        <div class="container">
+            <div class="section-inner">
+                <div class="section-description text-center">
+                    <h2>Features</h2>
+                    <p>This section gives a short description about the most considerable script features.</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-5 col-md-offset-1">
+                        <ul class="list-style1">
+                            <li class="row">
+                                <span class="brand-icon"><i class="material-icons">check</i></span>
+                                <span class="brand-title">Change file input <p>Design your own file input with
+                                        HTML&amp;CSS or just use our default template.</p></span>
+                            </li>
+                            <li class="row">
+                                <span class="brand-icon"><i class="material-icons">pan_tool</i></span>
+                                <span class="brand-title">Drag&amp;Drop <p>Drag and drop files straight from your
+                                        desktop and upload directly them.</p></span>
+                            </li>
+                            <li class="row">
+                                <span class="brand-icon"><i class="material-icons">cloud_upload</i></span>
+                                <span class="brand-title">Instant uploading <p>Upload the file directly to server after
+                                        choosing or dragging it.</p></span>
+                            </li>
+                            <li class="row">
+                                <span class="brand-icon"><i class="material-icons">add</i></span>
+                                <span class="brand-title">Add more <p>Choose multiple files from different folders
+                                        without instantly uploading them.</p></span>
+                            </li>
+                            <li class="row">
+                                <span class="brand-icon"><i class="material-icons">rowing</i></span>
+                                <span class="brand-title">Delete/Retry/Cancel... <p>Use this features or create your
+                                        own action to manipulate with files.</p></span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-5">
+                        <ul class="list-style1">
+                            <li class="row">
+                                <span class="brand-icon"><i class="material-icons">error_outline</i></span>
+                                <span class="brand-title">Validators <p>Limit your users to a specific file type, size,
+                                        number of files or write your own custom validator.</p></span>
+                            </li>
+                            <li class="row">
+                                <span class="brand-icon"><i class="material-icons">photo</i></span>
+                                <span class="brand-title">Resized image &amp; extension previews <p>Give your users an
+                                        in-browser thumb preview of images or file extension before they upload.</p></span>
+                            </li>
+                            <li class="row">
+                                <span class="brand-icon"><i class="material-icons">mode_edit</i></span>
+                                <span class="brand-title">Edit mode <p>Keep the uploaded files to input for previewing
+                                        or editing them.</p></span>
+                            </li>
+                            <li class="row">
+                                <span class="brand-icon"><i class="material-icons">accessibility</i></span>
+                                <span class="brand-title">API <p>You can completely manipulate your new jQuery.filer
+                                        input by using API attributes and methods.</p></span>
+                            </li>
+                            <li class="row">
+                                <span class="brand-icon"><i class="material-icons">code</i></span>
+                                <span class="brand-title">Customizig <p>Customize your input, templates(inline
+                                        variables, 40+ icons), captions, callbacks and many others.</p></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="section3" class="section-white">
+        <div class="container">
+            <div class="section-inner">
+                <a name="compatibility"></a>
+                <div class="section-description text-center">
+                    <h2>Compatibility</h2>
+                    <p>This section describes the script compatibility with browsers and servers.</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-5 col-md-offset-1 text-right">
+                        <h4>Browser Support</h4>
+                        <ul class="list-style3 style-rtl">
+                            <li>Chrome 13+</li>
+                            <li>Firefox 3.6+</li>
+                            <li>Safari 6+</li>
+                            <li>Opera 11.1+</li>
+                            <li>Maxthon 3.4+</li>
+                            <li>IE 10+</li>
+                            <li>and others that supports HTML5</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-5">
+                        <h4>Server Support</h4>
+                        <ul class="list-style3 style-ltr">
+                            <li>ASP.NET</li>
+                            <li>ColdFusion</li>
+                            <li>Node.js</li>
+                            <li>PHP</li>
+                            <li>Perl</li>
+                            <li>Python</li>
+                            <li>and others that supports standart HTML form file uploads</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="section4">
+        <a name="instructions"></a>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Instructions:</h2>
+                    <hr>
+                    <p><a href="#download" class="underlined">Download the plugin</a>, unzip it, copy files and include
+                        jQuery.filer script and stylesheets in your document (you will need to make sure the css and js
+                        files are on your server, and adjust the paths in the script and link tag). Make sure you also
+                        load the jQuery library. Example:</p>
+                    <br>
+                    <div>
+                        <b>Stylesheets:</b>
+                        <p>Include the jQuery.filer stylesheets into head.</p>
+                        <pre class="prettyprint linenums lang-html">&lt;link href="./css/jquery.filer.css" type="text/css" rel="stylesheet" /&gt;<br>&lt;link href="./css/themes/jquery.filer-dragdropbox-theme.css" type="text/css" rel="stylesheet" /&gt;</pre>
+                        <br>
+                        <b>Scripts:</b>
+                        <p>Include the jQuery library and jQuery.filer script file in your html page.</p>
+                        <pre class="prettyprint lang-html">&lt;script src="http://code.jquery.com/jquery-3.1.0.min.js"&gt;&lt;/script&gt;<br>&lt;script src="./js/jquery.filer.min.js"&gt;&lt;/script&gt;</pre>
+                        <br>
+                        <b>HTML:</b>
+                        <p>Create a simple form with an input file element.</p>
+                        <pre class="prettyprint lang-html">&lt;form action="php/upload.html" method="post" enctype="multipart/form-data"&gt;<br>      &lt;input type="file" name="files[]" id="filer_input" multiple="multiple"&gt;<br>      &lt;input type="submit" value="Submit"&gt;<br>&lt;/form&gt;</pre>
+                        <br>
+                        <b>Javascript:</b>
+                        <p>The plugin is named "filer" and can be applied to any element. If you are not familiar with
+                            jQuery, please, read this <a href="http://learn.jquery.com/about-jquery/how-jquery-works/"
+                                class="underlined" target="_blank">tutorial for beginners</a>.</p>
+                        <pre class="prettyprint lang-js">$(document).ready(function() {<br>     $('#filer_input').filer();       <br>});</pre>
+                        <hr>
+                        <b>Result:</b>
+                        <p>Here is the result of our effort. <span class="text-danger">Note</span> that we haven't
+                            applied any option or theme and the example below is the default version.</p>
+                        <form action="php/upload.html" method="post" enctype="multipart/form-data">
+                            <input type="file" name="files[]" id="demo-fileInput-2" multiple="multiple">
+                            <input type="submit" class="btn-custom green" value="Submit">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="section5" class="section-white">
+        <a name="demos"></a>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Demos:</h2>
+                    <hr>
+                    <div>
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active"><a href="#demo-default" role="tab" data-toggle="tab">Default</a></li>
+                            <li role="presentation"><a href="#demo-dragdrop" role="tab" data-toggle="tab">Drag&amp;Drop</a></li>
+                            <li role="presentation"><a href="#demo-instant-upload" role="tab" data-toggle="tab">Instant
+                                    Upload</a></li>
+                            <li role="presentation"><a href="#demo-edit-mode" role="tab" data-toggle="tab">Edit Mode</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane pt20 pb20 fade in active" id="demo-default">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <b>Example 1:</b>
+                                        <br><br>
+                                        <p>In this example we <span class="text-warning"><em>limit</em></span> our
+                                            users with maximal 3 number of files, all files together must have maximal
+                                            3MB's and the file's extensions should be matched in the array(ex: ['jpg',
+                                            'png', 'gif']). We are also <span class="text-info"><em>changig</em></span>
+                                            the file input to jQuery.filer default design. We also need to show the
+                                            <span class="text-success"><em>file preview</em></span> in our browser
+                                            before uploading the file.</p>
+                                        <pre class="prettyprint lang-js">limit: 3,<br>maxSize: 3,<br>extensions: ["jpg", "png", "gif"],<br>showThumbs: true</pre>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <b>Result:</b>
+                                        <br><br>
+                                        <form action="php/upload.html" method="post" enctype="multipart/form-data">
+                                            <input type="file" name="files[]" id="demo-fileInput-3" multiple="multiple">
+                                            <input type="submit" class="btn-custom green" value="Submit">
+                                        </form>
+                                    </div>
+                                </div>
+                                <br>
+                                <hr><br>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <b>Example 2:</b>
+                                        <br><br>
+                                        <p>In this example we <span class="text-info"><em>designed</em></span> our own
+                                            file input and used our own theme - 'dragdropbox'. We also added the <span
+                                                class="text-success"><em>file preview</em></span> in our browser before
+                                            uploading the file.</p>
+                                        <pre class="prettyprint lang-js">showThumbs: true,<br>templates: {...} // see demo in .zip file</pre>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <b>Result:</b>
+                                        <br><br>
+                                        <form action="php/upload.html" method="post" enctype="multipart/form-data"
+                                            class="text-center">
+                                            <input type="file" name="files[]" id="demo-fileInput-4" multiple="multiple">
+                                            <input type="submit" class="btn-custom green" value="Submit">
+                                        </form>
+                                    </div>
+                                </div>
+                                <br>
+                                <hr><br>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <b>Example 3:</b>
+                                        <br><br>
+                                        <p>If you want to have an input like in Example 1 and also to allow your users
+                                            to upload files from different folders just set <span class="text-info"><b>addMore</b></span>
+                                            option to <em>true</em></p>
+                                        <pre class="prettyprint lang-js">addMore: true</pre>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <b>Result:</b>
+                                        <br><br>
+                                        <form action="php/upload.html" method="post" enctype="multipart/form-data">
+                                            <input type="file" name="files[]" id="demo-fileInput-5" multiple="multiple">
+                                            <input type="submit" class="btn-custom green" value="Submit">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane pt20 pb20 fade" id="demo-dragdrop">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <b>Example 4:</b>
+                                        <br><br>
+                                        <p>In this example we activated Drag&amp;Drop feature for the default
+                                            jQuery.filer input. <span class="text-danger">Note</span> that this feature
+                                            is working only with <b>Instantly Upload</b> feature!</p>
+                                        <pre class="prettyprint lang-js">dragDrop: {...} // see documentation</pre>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <b>Result:</b>
+                                        <br><br>
+                                        <input type="file" name="files[]" id="demo-fileInput-6" multiple="multiple">
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane pt20 pb20 fade" id="demo-instant-upload">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <b>Example 5:</b>
+                                        <br><br>
+                                        <p>In this example we activated Instantly Upload feature. After choosing a
+                                            file, it should automatically upload it!</p>
+                                        <pre class="prettyprint lang-js">uploadFile: {...} // see documentation</pre>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <b>Result:</b>
+                                        <br><br>
+                                        <input type="file" name="files[]" id="demo-fileInput-7" multiple="multiple">
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane pt20 pb20 fade" id="demo-edit-mode">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <b>Example 6:</b>
+                                        <br><br>
+                                        <p>In this example we activated <b>addMore</b> option and added 2 files(this
+                                            files were already uploaded). Now you can edit the 2 uploaded files or add
+                                            some more.<br><br><span class="text-danger">Note</span> that on the
+                                            back-end side to get the full list with files you will need to append new
+                                            uploaded list to the old one.</p>
+                                        <pre class="prettyprint lang-js">files: [...] // see documentation</pre>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <b>Result:</b>
+                                        <br><br>
+                                        <form action="php/upload.html" method="post" enctype="multipart/form-data">
+                                            <input type="file" name="files[]" id="demo-fileInput-8" multiple="multiple">
+                                            <input type="submit" class="btn-custom green" value="Submit">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="section5" class="section-blue">
+        <a name="download"></a>
+        <div class="container">
+            <div class="section-inner">
+                <div class="section-description text-center row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="font-title">Download</h1>
+                        <p>The script is available on Github. You can download it directly from there or just to
+                            take a look at source code, issues and changelog.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3 text-center">
+                        <div class="buttons row">
+                            <a href="https://github.com/GerardBalaoro/jquery.filer/archive/v1.3.0.zip" class="col-sm-6">
+                                <span class="font-title">Download</span>
+                                <span class="sub">the jQuery plugin</span>
+                            </a>
+                            <a href="https://github.com/GerardBalaoro/jquery.filer" class="col-sm-6" target="_blank">
+                                <span class="font-title">Source</span>
+                                <span class="sub">on Github</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="section6" class="section-white">
+        <a name="documentation"></a>
+        <div class="container">
+            <div class="section-inner">
+                <div class="section-description text-center">
+                    <h2>Documentation</h2>
+                    <p>This section gives the full documentation of this script.</p>
+                    <p class="text-center"><a href="https://github.com/GerardBalaoro/jquery.filer/blob/master/js/jquery.filer.js#L1049"
+                            target="_blank">Options in code</a></p>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active"><a href="#documentation-options" role="tab"
+                                    data-toggle="tab">Options</a></li>
+                            <li role="presentation"><a href="#documentation-api" role="tab" data-toggle="tab">API</a></li>
+                            <li role="presentation"><a href="#documentation-attributes" role="tab" data-toggle="tab">Input
+                                    Attributes</a></li>
+                            <li role="presentation"><a href="#documentation-variables" role="tab" data-toggle="tab">Filer
+                                    Variables</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane pt20 pb20 active in fade" id="documentation-options">
+                                <p>You can apply jQuery.filer plugin to the input file and to send options als Object
+                                    or Function. Example:</p>
+                                <pre class="prettyprint lang-js">$("#file_input").filer( Obj );</pre>
+                                <pre class="prettyprint lang-js">$("#file_input").filer(function(default_options){
+    return Obj;
+});</pre>
+                                <ul class="list-style4">
+                                    <li class="row">
+                                        <div class="col-md-4"><b>Name</b></div>
+                                        <div class="col-md-8"><b>Description</b></div>
+                                    </li>
+                                    <li class="row">
+                                        <div class="col-md-4">
+                                            <span>limit</span>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p>Maximal number of files.</p>
+                                            <span class="text-muted">null, Number; Default value: null</span>
+                                        </div>
+                                    </li>
+                                    <li class="row">
+                                        <div class="col-md-4">
+                                            <span>maxSize</span>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p>Maximal size in MB's for all files.</p>
+                                            <span class="text-muted">null, Number; Default value: null</span>
+                                        </div>
+                                    </li>
+                                    <li class="row">
+                                        <div class="col-md-4">
+                                            <span>fileMaxSize</span>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p>Maximal file size in MB's for each file.</p>
+                                            <span class="text-muted">null, Number; Default value: null</span>
+                                        </div>
+                                    </li>
+                                    <li class="row">
+                                        <div class="col-md-4">
+                                            <span>extensions</span>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p>File extensions and mime types whitelist.</p>
+                                            <span class="text-muted">null, Array; Default value: null</span>
+                                        </div>
+                                    </li>
+                                    <li class="row">
+                                        <div class="col-md-4">
+                                            <span>changeInput</span>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p>Create a new file input element. You can use the default template or to
+                                                write your own as String or jQuery Element.</p>
+                                            <span class="text-muted">Boolean, String, Object; Default value: true</span>
+                                        </div>
+                                    </li>
+                                    <li class="row">
+                                        <div class="col-md-4">
+                                            <span>showThumbs</span>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p>Show the in-browser files previews.</p>
+                                            <span class="text-muted">Boolean; Default value: false</span>
+                                        </div>
+                                    </li>
+                                    <li class="row">
+                                        <div class="col-md-4">
+                                            <span>appendTo</span>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p>The target thumbnails target element selector. Use this option when you
+                                                want to append your files previews into specific element.</p>
+                                            <span class="text-muted">null, String; Default value: null</span>
+                                        </div>
+                                    </li>
+                                    <li class="row">
+                                        <div class="col-md-4">
+                                            <span>theme</span>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p>Specify the jQuery.filer theme. It will just set to main filer div as
+                                                class the theme name.</p>
+                                            <span class="text-muted">null, String; Default value: null</span>
+                                        </div>
+                                    </li>
+                                    <li class="row">
+                                        <div class="col-md-4">
+                                            <span>templates</span>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p>Specify the file preview templates, selectors and some options.</p>
+                                            <span class="text-muted">Object, Default value:</span><br><br>
+                                            <pre class="prettyprint lang-js">{
+    box: null, //Thumbnail's box element {null, String}
+    item: null, //File item element {String(use Filer Variables), Function}
+    itemAppend: null, //File item element for edit mode {String(use Filer Variables), Function}
+    progressBar: null, //File upload progress bar element {String}
+    itemAppendToEnd: false, //Append the new file item to the end of the list {Boolean}
+    removeConfirmation: true, //Remove file confirmation {Boolean}
+    canvasImage: true //Resize and crop the image thumbnail to item element size
+    _selectors: {
+        list: null, //List selector {String}
+        item: null, //Item selector {String}
+        progressBar: null, //Progress bar selector {String}
+        remove: null //Remove button selector {String}
+    }
+}</pre>
+                                        </div>
+                                    </li>
+                                    <li class="row">
+                                        <div class="col-md-4">
+                                            <span>uploadFile</span>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p>Enable Instantly file uploading feature. In the object you can specify
+                                                the normal jQuery $.ajax options, or callbacks.</p>
+                                            <span class="text-muted">null, Object; Default value: </span><br><br>
+                                            <pre class="prettyprint lang-js">{
+    url: null, //URL to which the request is sent {String}
+    data: null, //Data to be sent to the server {Object}
+    type: 'POST', //The type of request {String}
+    enctype: 'multipart/form-data', //Request enctype {String}
+    synchron: false //Upload synchron the files
+    beforeSend: null, //A pre-request callback function {Function}
+    success: null, //A function to be called if the request succeeds {Function}
+    error: null, //A function to be called if the request fails {Function}
+    statusCode: null, //An object of numeric HTTP codes {Object}
+    onProgress: null, //A function called while uploading file with progress percentage {Function}
+    onComplete: null //A function called when all files were uploaded {Function}
+}</pre>
+                                        </div>
+                                    </li>
+                                    <li class="row">
+                                        <div class="col-md-4">
+                                            <span>dragDrop</span>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p>Enable Drag&amp;Drop feature. In this object you can specify only the
+                                                callbacks. <span class="text-danger">Note</span> that this feature
+                                                works only with activated uploadFile option.</p>
+                                            <span class="text-muted">null, Object; Default value: null</span><br><br>
+                                            <pre class="prettyprint lang-js">{
+    dragEnter: null, //A function that is fired when a dragged element enters the input. {Function}
+    dragLeave: null, //A function that is fired when a dragged element leaves the input. {Function}
+    drop: null, //A function that is fired when a dragged element is dropped on a valid drop target. {Function}
+    dragContainer: null //Drag container {String}
+}</pre>
+                                        </div>
+                                    </li>
+                                    <li class="row">
+                                        <div class="col-md-4">
+                                            <span>addMore</span>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p>Multiple file selection without instantly uploading them. You need to
+                                                enable this feature in Edit Mode when you need to upload more than 1
+                                                file.<br><span class="text-danger">Note</span> that if you want to use
+                                                it, you will need to remove the options dragDrop and uploadFile.</p>
+                                            <span class="text-muted">Boolean; Default value: false</span>
+                                        </div>
+                                    </li>
+                                    <li class="row">
+                                        <div class="col-md-4">
+                                            <span>allowDuplicates</span>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p>Allow or disallow user to upload the same file multiple time.</p>
+                                            <span class="text-muted">Boolean; Default value: false</span>
+                                        </div>
+                                    </li>
+                                    <li class="row">
+                                        <div class="col-md-4">
+                                            <span>clipBoardPaste</span>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p>Printscreen or copied images would be uploaded by pasting. <span class="text-danger">Note</span>
+                                                that this feature works only by instantly uploading. In <span class="text-danger">Firefox</span>
+                                                this feature is not available.</p>
+                                            <span class="text-muted">Boolean; Default value: false</span>
+                                        </div>
+                                    </li>
+                                    <li class="row">
+                                        <div class="col-md-4">
+                                            <span>excludeName</span>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p>By removing a file the script is creating an hidden input with it's
+                                                name. Use this option if you want to specify the input's name.</p>
+                                            <span class="text-muted">null; Default value: jfiler-items-exclude-(input
+                                                file name)-(input index)</span>
+                                        </div>
+                                    </li>
+                                    <li class="row">
+                                        <div class="col-md-4">
+                                            <span>files</span>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p>The list with the already uploaded files. Use this option in Edit Mode.
+                                                <span class="text-danger">Note</span> that on the back-end side to get
+                                                the full list with files you will need to append new uploaded list to
+                                                the old one (security reasons).</p>
+                                            <span class="text-muted">null, Array; Default value:</span><br><br>
+                                            <pre class="prettyprint lang-js">[
+    {
+        name: "appended_file.jpg",
+        size: 5453,
+        type: "image/jpg",
+        file: "/path/to/file.jpg",
+        url: "http://path/to/link/file2.jpg"
+    },
+    {
+        name: "appended_file_2.jpg",
+        size: 9453,
+        type: "image/jpg",
+        file: "path/to/file2.jpg",
+        url: "http://path/to/link/file2.jpg"
+    }
+]</pre>
+                                        </div>
+                                    </li>
+                                    <li class="row">
+                                        <div class="col-md-4">
+                                            <span>beforeRender</span>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p>A function that is fired before rendering the new file input.</p>
+                                            <span class="text-muted">null, Function; Default value: null</span>
+                                        </div>
+                                    </li>
+                                    <li class="row">
+                                        <div class="col-md-4">
+                                            <span>afterRender</span>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p>A function that is fired after rendering the new file input.</p>
+                                            <span class="text-muted">null, Function; Default value: null</span>
+                                        </div>
+                                    </li>
+                                    <li class="row">
+                                        <div class="col-md-4">
+                                            <span>beforeShow</span>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p>A function that is fired before showing thumbnail's box. Should return
+                                                Boolean value.</p>
+                                            <span class="text-muted">null, Function; Default value: null</span>
+                                        </div>
+                                    </li>
+                                    <li class="row">
+                                        <div class="col-md-4">
+                                            <span>afterShow</span>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p>A function that is fired after appending all thumbnails items.</p>
+                                            <span class="text-muted">null, Function; Default value: null</span>
+                                        </div>
+                                    </li>
+                                    <li class="row">
+                                        <div class="col-md-4">
+                                            <span>beforeSelect</span>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p>A function that is fired after selecting a file and before adding it to
+                                                the memory. Should return Boolean value.</p>
+                                            <span class="text-muted">null, Function; Default value: null</span>
+                                        </div>
+                                    </li>
+                                    <li class="row">
+                                        <div class="col-md-4">
+                                            <span>onSelect</span>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p>A function that is fired after selecting a file.</p>
+                                            <span class="text-muted">null, Function; Default value: null</span>
+                                        </div>
+                                    </li>
+                                    <li class="row">
+                                        <div class="col-md-4">
+                                            <span>onFileCheck</span>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p>A function that is fired by checking the file. Should return a Boolean
+                                                value.</p>
+                                            <span class="text-muted">null, Function; Default value: null</span>
+                                        </div>
+                                    </li>
+                                    <li class="row">
+                                        <div class="col-md-4">
+                                            <span>onRemove</span>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p>A function that is fired on/before deleting a file. Should return
+                                                Boolean value.</p>
+                                            <span class="text-muted">null, Function; Default value: null</span>
+                                        </div>
+                                    </li>
+                                    <li class="row">
+                                        <div class="col-md-4">
+                                            <span>onEmpty</span>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p>A function that is fired when no files are selected.</p>
+                                            <span class="text-muted">null, Function; Default value: null</span>
+                                        </div>
+                                    </li>
+                                    <li class="row">
+                                        <div class="col-md-4">
+                                            <span>options</span>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p>Specify your own options that you can also use as Filer Variables.</p>
+                                            <span class="text-muted">Object</span><br><br>
+                                        </div>
+                                    </li>
+                                    <li class="row">
+                                        <div class="col-md-4">
+                                            <span>dialogs</span>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p>The dialogs object for alert and confirmation. You can use your own
+                                                modals to do this.</p>
+                                            <span class="text-muted">null, Obj; Default value:</span><br><br>
+                                            <pre class="prettyprint lang-js">{
+    alert: function(text) {
+        return alert(text);
+    },
+    confirm: function(text, callback) {
+        confirm(text) ? callback() : null;
+    }
+}</pre>
+                                        </div>
+                                    </li>
+                                    <li class="row">
+                                        <div class="col-md-4">
+                                            <span>captions</span>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p>Specify your own captions. Here you can also use Filer Variables.</p>
+                                            <span class="text-muted">Object; Default value:</span><br><br>
+                                            <pre class="prettyprint lang-js">{
+    button: "Choose Files",
+    feedback: "Choose files To Upload",
+    feedback2: "files were chosen",
+    drop: "Drop file here to Upload",
+    removeConfirmation: "Are you sure you want to remove this file?",
+    errors: {
+        filesLimit: "Only {{fi-limit}} files are allowed to be uploaded.",
+        filesType: "Only Images are allowed to be uploaded.",
+        filesSize: "{{fi-name}} is too large! Please upload file up to {{fi-fileMaxSize}} MB.",
+        filesSizeAll: "Files you've choosed are too large! Please upload files up to {{fi-maxSize}} MB.",
+        folderUpload: "You are not allowed to upload folders."
+    }
+}</pre>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div role="tabpanel" class="tab-pane pt20 pb20 fade" id="documentation-api">
+                                <p>You can completely manipulate your jQuery.filer input. Just get jQuery.filer toolkit
+                                    with .prop(). Example:</p>
+                                <pre class="prettyprint lang-js">var filerKit = $("#file_input").prop("jFiler");
+filerKit.reset();
+</pre>
+                                <ul class="list-style4">
+                                    <li class="row">
+                                        <div class="col-md-4"><b>Name</b></div>
+                                        <div class="col-md-8"><b>Usage</b></div>
+                                    </li>
+                                    <li class="row">
+                                        <div class="col-md-4">
+                                            <span>options</span>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p>jQuery.filer options.</p>
+                                            <span class="text-muted">Object</span>
+                                        </div>
+                                    </li>
+                                    <li class="row">
+                                        <div class="col-md-4">
+                                            <span>listEl</span>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p>Thumbnail's list Element.</p>
+                                            <span class="text-muted">DOM Object</span>
+                                        </div>
+                                    </li>
+                                    <li class="row">
+                                        <div class="col-md-4">
+                                            <span>boxEl</span>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p>Thumbnail's box Element.</p>
+                                            <span class="text-muted">DOM Object</span>
+                                        </div>
+                                    </li>
+                                    <li class="row">
+                                        <div class="col-md-4">
+                                            <span>newInputEl</span>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p>New file input Element.</p>
+                                            <span class="text-muted">DOM Object</span>
+                                        </div>
+                                    </li>
+                                    <li class="row">
+                                        <div class="col-md-4">
+                                            <span>inputEl</span>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p>File input Element.</p>
+                                            <span class="text-muted">DOM Object</span>
+                                        </div>
+                                    </li>
+                                    <li class="row">
+                                        <div class="col-md-4">
+                                            <span>files</span>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p>Javascript FileList files.</p>
+                                            <span class="text-muted">FileList</span>
+                                        </div>
+                                    </li>
+                                    <li class="row">
+                                        <div class="col-md-4">
+                                            <span>files_list</span>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p>jQuert.filer files list.</p>
+                                            <span class="text-muted">Object</span>
+                                        </div>
+                                    </li>
+                                    <li class="row">
+                                        <div class="col-md-4">
+                                            <span>current_file</span>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p>Last choosed file.</p>
+                                            <span class="text-muted">Object</span>
+                                        </div>
+                                    </li>
+                                    <li class="row">
+                                        <div class="col-md-4">
+                                            <span>append</span>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p>Append file function. Send an Object with file information als
+                                                paramenter.</p>
+                                            <span class="text-muted">Function; Parameter:</span><br><br>
+                                            <pre class="prettyprint lang-js">{
+    name: "appended_file.jpg",
+    size: 5453,
+    type: "image/jpg",
+    file: "/path/to/file.jpg"
+}</pre>
+                                        </div>
+                                    </li>
+                                    <li class="row">
+                                        <div class="col-md-4">
+                                            <span>retry</span>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p>Retry upload-failed file function. Send a Number with file index als
+                                                paramenter.</p>
+                                            <span class="text-muted">Function; Parameter:</span><br><br>
+                                            <pre class="prettyprint lang-js">0</pre>
+                                        </div>
+                                    </li>
+                                    <li class="row">
+                                        <div class="col-md-4">
+                                            <span>remove</span>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p>Remove file function. Send a Number with file index als paramenter.</p>
+                                            <span class="text-muted">Function; Parameter:</span><br><br>
+                                            <pre class="prettyprint lang-js">0</pre>
+                                        </div>
+                                    </li>
+                                    <li class="row">
+                                        <div class="col-md-4">
+                                            <span>reset</span>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p>Reset function.</p>
+                                            <span class="text-muted">Function</span>
+                                        </div>
+                                    </li>
+                                    <li class="row">
+                                        <div class="col-md-4">
+                                            <span>enable</span>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p>Enable input function.</p>
+                                            <span class="text-muted">Function</span>
+                                        </div>
+                                    </li>
+                                    <li class="row">
+                                        <div class="col-md-4">
+                                            <span>disable</span>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p>Disable input function.</p>
+                                            <span class="text-muted">Function</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div role="tabpanel" class="tab-pane pt20 pb20 fade" id="documentation-attributes">
+                                <p>You can use this input attributes to specify the filer options directly from HTML.
+                                    Example:</p>
+                                <pre class="prettyprint lang-html">&lt;input type="file" name="files[]" id="filer_input" data-jfiler-limit="3"&gt;</pre>
+                                <ul class="list-style4">
+                                    <li class="row">
+                                        <div class="col-md-4"><b>Name</b></div>
+                                        <div class="col-md-8"><b>Description</b></div>
+                                    </li>
+                                    <li class="row">
+                                        <div class="col-md-4">
+                                            <span>name</span>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p>[data-jfiler-name]</p>
+                                            <span class="text-muted">String</span>
+                                        </div>
+                                    </li>
+                                    <li class="row">
+                                        <div class="col-md-4">
+                                            <span>limit</span>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p>[data-jfiler-limit]</p>
+                                            <span class="text-muted">Number</span>
+                                        </div>
+                                    </li>
+                                    <li class="row">
+                                        <div class="col-md-4">
+                                            <span>maxSize</span>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p>[data-jfiler-maxSize]</p>
+                                            <span class="text-muted">Number</span>
+                                        </div>
+                                    </li>
+                                    <li class="row">
+                                        <div class="col-md-4">
+                                            <span>extensions</span>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p>[data-jfiler-extensions]</p>
+                                            <span class="text-muted">Comma spliced</span>
+                                        </div>
+                                    </li>
+                                    <li class="row">
+                                        <div class="col-md-4">
+                                            <span>changeInput</span>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p>[data-jfiler-changeInput]</p>
+                                            <span class="text-muted">Boolean</span>
+                                        </div>
+                                    </li>
+                                    <li class="row">
+                                        <div class="col-md-4">
+                                            <span>showThumbs</span>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p>[data-jfiler-showThumbs]</p>
+                                            <span class="text-muted">Boolean</span>
+                                        </div>
+                                    </li>
+                                    <li class="row">
+                                        <div class="col-md-4">
+                                            <span>appendTo</span>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p>[data-jfiler-appendTo]</p>
+                                            <span class="text-muted">String</span>
+                                        </div>
+                                    </li>
+                                    <li class="row">
+                                        <div class="col-md-4">
+                                            <span>theme</span>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p>[data-jfiler-theme]</p>
+                                            <span class="text-muted">String</span>
+                                        </div>
+                                    </li>
+                                    <li class="row">
+                                        <div class="col-md-4">
+                                            <span>excludeName</span>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p>[data-jfiler-excludeName]</p>
+                                            <span class="text-muted">String</span>
+                                        </div>
+                                    </li>
+                                    <li class="row">
+                                        <div class="col-md-4">
+                                            <span>files</span>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p>[data-jfiler-files]</p>
+                                            <span class="text-muted">JSON String</span>
+                                        </div>
+                                    </li>
+                                    <li class="row">
+                                        <div class="col-md-4">
+                                            <span>options</span>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p>[data-jfiler-options]</p>
+                                            <span class="text-muted">JSON String</span>
+                                        </div>
+                                    </li>
+                                    <li class="row">
+                                        <div class="col-md-4">
+                                            <span>uploadUrl</span>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p>[data-jfiler-uploadUrl]</p>
+                                            <span class="text-muted">String</span>
+                                        </div>
+                                    </li>
+                                    <li class="row">
+                                        <div class="col-md-4">
+                                            <span>uploadData</span>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p>[data-jfiler-uploadData]</p>
+                                            <span class="text-muted">JSON String</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div role="tabpanel" class="tab-pane pt20 pb20 fade" id="documentation-variables">
+                                <p>Filer Variables are very simple to use in jQUery.filer string options. To use them
+                                    just write {{fi-(variable name)}}. Below is an example and are all available
+                                    combinations that can be used:</p>
+                                <pre class="prettyprint lang-js">filesLimit: "Only {{fi-limit}} files are allowed to be uploaded."</pre>
+                                <ul class="list-style4">
+                                    <li class="row">
+                                        <div class="col-md-4"><b>Name</b></div>
+                                        <div class="col-md-8"><b>Variable</b></div>
+                                    </li>
+                                    <li class="row">
+                                        <div class="col-md-4">
+                                            <span>name</span>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p>fi-name</p>
+                                        </div>
+                                    </li>
+                                    <li class="row">
+                                        <div class="col-md-4">
+                                            <span>size</span>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p>fi-size</p>
+                                        </div>
+                                    </li>
+                                    <li class="row">
+                                        <div class="col-md-4">
+                                            <span>size2</span>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p>fi-size2</p>
+                                        </div>
+                                    </li>
+                                    <li class="row">
+                                        <div class="col-md-4">
+                                            <span>type</span>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p>fi-type</p>
+                                        </div>
+                                    </li>
+                                    <li class="row">
+                                        <div class="col-md-4">
+                                            <span>extension</span>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p>fi-extension</p>
+                                        </div>
+                                    </li>
+                                    <li class="row">
+                                        <div class="col-md-4">
+                                            <span>icon</span>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p>fi-icon</p>
+                                        </div>
+                                    </li>
+                                    <li class="row">
+                                        <div class="col-md-4">
+                                            <span>icon2</span>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p>fi-icon2</p>
+                                        </div>
+                                    </li>
+                                    <li class="row">
+                                        <div class="col-md-4">
+                                            <span>id</span>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p>fi-id</p>
+                                        </div>
+                                    </li>
+                                    <li class="row">
+                                        <div class="col-md-4">
+                                            <span>image</span>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p>fi-image</p>
+                                        </div>
+                                    </li>
+                                    <li class="row">
+                                        <div class="col-md-4">
+                                            <span>progressBar</span>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p>fi-progressBar</p>
+                                        </div>
+                                    </li>
+                                    <li class="row">
+                                        <div class="col-md-4">
+                                            <span>limit</span>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p>fi-limit</p>
+                                        </div>
+                                    </li>
+                                    <li class="row">
+                                        <div class="col-md-4">
+                                            <span>maxSize</span>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p>fi-maxSize</p>
+                                        </div>
+                                    </li>
+                                    <li class="row">
+                                        <div class="col-md-4">
+                                            <span>options</span>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p>fi-&lt;options object key&gt;</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="section7">
+        <a name="support"></a>
+        <a name="contribute"></a>
+        <a name="donate"></a>
+        <div class="container">
+            <div class="section-inner">
+                <div class="section-description text-center">
+                    <h2>Support &amp; Contribute</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <b>Support:</b>
+                        <hr>
+                        <p>
+                            The original creators of this plugin, <b><a href="https://github.com/CreativeDream">CreativeDream</a></b>, moved
+                            the project to <b><a href="https://github.com/innostudio/fileuploader">jQuery.FileUploader</a></b>. As such, support
+                            for this version is no longer available.
+                        </p>
+                        <p>
+                            This page and <a href="https://github.com/GerardBalaoro/jquery.filer">repository</a> is currently maintained by
+                            <b><a href="https://github.com/GerardBalaoro">Gerard Balaoro</a></b>. The source was forked from a previous version
+                            of the original project while the documentation page was scraped from
+                            <a href="https://web.archive.org/web/20161128125707/http://filer.grandesign.md/"> an archived version or the original one.</a>
+                        </p>
+                        <br>
+                        <b>Contribute:</b>
+                        <hr>
+                        <p>
+                            You are still free to contribute and improve this project!
+                        </p>
+                        <p>
+                            For themes, you can contribute to plugin by making a
+                            <a href="https://github.com/GerardBalaoro/jquery.filer/pulls" class="underlined" target="_blank">Pull Request</a>
+                            to <code>/css/themes/</code> and writing a short description containing plugin templates options.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="section8" class="section-white">
+        <a name="support"></a>
+        <div class="container">
+            <div class="section-inner">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 text-center">
+                        <h2>PHP File Uploader</h2>
+                        <p>
+                            PHP File Uploader is an easy to use, hi-performance File Upload Script which allows you to
+                            upload files to webserver. It is another script designed for jQuery.filer plugin.
+                            You can get it using the link below.
+                        </p>
+                        <br>
+                        <a href="https://github.com/CreativeDream/php-uploader" class="btn-custom orange" target="blank">View
+                            on Github</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="section9">
+        <a name="license"></a>
+        <div class="container">
+            <div class="section-inner">
+                <div class="section-description mt0 text-center">
+                    <h2>License</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 text-center">
+                        <h4>Apache License 2.0</h4>
+                        <p>
+                            jQuery.filer is licensed under
+                            <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License 2.0.</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="section10" class="section-blue">
+        <div class="container">
+            <div class="section-inner">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h1 class="font-title" style="color: #fff">jQuery.filer</h1>
+                        <br>
+                        <p>Simple HTML5 file uploader plugin tool for jQuery.</p>
+                    </div>
+                    <div class="col-md-4 pull-right">
+                        <div class="buttons row">
+                            <a href="#download" class="col-sm-12">
+                                <span class="font-title">Download</span>
+                                <span class="sub">the jQuery plugin</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
