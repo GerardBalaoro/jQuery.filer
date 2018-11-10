@@ -1,0 +1,46 @@
+{
+  "name": "jquery.filer",
+  "version": "1.3.0",
+  "title": "jQuery.filer - Simple HTML5 file uploader plugin tool for jQuery.",
+  "description": "jQuery.filer - Simple HTML5 file uploader, a plugin tool for jQuery which change completely file input and make it with multiple file selection, drag&drop support, different validations, thumbnails, icons, instant upload, print-screen upload and many other features and options.",
+  "keywords": [
+    "jquery",
+    "jquery-plugin",
+    "jquery.filer",
+    "file",
+    "upload",
+    "widget",
+    "plugin",
+    "multiple",
+    "selection",
+    "drag",
+    "drop",
+    "progress",
+    "preview",
+    "thumbnails",
+    "resume",
+    "php",
+    "bootstrap"
+  ],
+  "homepage": "https://gerardbalaoro.github.io/jQuery-Filer/",
+  "author": {
+    "name": "CreativeDream",
+    "url": "https://github.com/CreativeDream/"
+  },
+  "maintainers": [
+    {
+      "name": "Gerard Balaoro",
+      "url": "https://github.com/GerardBalaoro/"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GerardBalaoro/jQuery-Filer.git"
+  },
+  "bugs": "https://github.com/GerardBalaoro/jQuery-Filer/issues",
+  "license": "Apache-2.0",
+  "main": "js/jquery.filer.js",
+  "devDependencies": {
+    "bower-json": "0.6.0"
+  }
+}
