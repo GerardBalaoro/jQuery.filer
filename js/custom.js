@@ -216,13 +216,13 @@ $(document).ready(function(){
                 name: "appended_file.jpg",
                 size: 5453,
                 type: "image/jpg",
-                file: "http://dummyimage.com/720x480/f9f9f9/191a1a.jpg"
+                file: "https://dummyimage.com/720x480/f9f9f9/191a1a.jpg"
             },
             {
                 name: "appended_file_2.jpg",
                 size: 9453,
                 type: "image/jpg",
-                file: "http://dummyimage.com/640x480/f9f9f9/191a1a.jpg"
+                file: "https://dummyimage.com/640x480/f9f9f9/191a1a.jpg"
             }
         ]
     });
