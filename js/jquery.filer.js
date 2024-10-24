@@ -2,7 +2,7 @@
  * jQuery.filer
  * Copyright (c) 2016 CreativeDream
  * Website: https://github.com/CreativeDream/jquery.filer
- * Version: 1.3 (14-Sep-2016)
+ * Version: 1.3.1 (23-Oct-2024)
  * Requires: jQuery v1.7.1 or later
  */
 (function($) {
@@ -718,12 +718,18 @@
                                     var blob = (fromDrop ? b64toBlob(e.originalEvent.dataTransfer.getData("text/uri-list")
                                         .toString()
                                         .split(',')[1], "image/png") : items[i].getAsFile());
-                                    blob.name = Math.random()
-                                        .toString(36)
-                                        .substring(5);
-                                    blob.name += blob.type.indexOf("/") != -1 ? "." + blob.type.split("/")[1].toString()
-                                        .toLowerCase() : ".png";
-                                    f._onChange(e, [blob]);
+
+                                    // blob.name = Math.random()
+                                    //     .toString(36)
+                                    //     .substring(5);
+                                    //
+                                    // blob.name += blob.type.indexOf("/") != -1 ? "." + blob.type.split("/")[1].toString()
+                                    //     .toLowerCase() : ".png";
+
+                                    var fileName = Math.random().toString(36).substring(5) + (blob.type.indexOf("/") != -1 ? "." + blob.type.split("/")[1].toLowerCase() : ".png");
+                                    var file = new File([blob], fileName, { type: blob.type });
+                                    f._onChange(e, [file]);
+
                                     f._clPsePre = setTimeout(function() {
                                         delete f._clPsePre
                                     }, 1000);
